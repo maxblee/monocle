@@ -9,3 +9,14 @@ axum-test = "16.4.1"
 clap = { workspace = true, features = ["derive", "env"] }
 color-eyre.workspace = true
 tokio = { workspace = true, features = ["full"] }
+
+[dev-dependencies]
+criterion = { workspace = true, features = [
+    "async",
+    "async_tokio",
+    "html_reports",
+] }
+
+[[bench]]
+name = "ping"
+harness = false
