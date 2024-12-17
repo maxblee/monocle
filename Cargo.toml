@@ -1,0 +1,11 @@
+[workspace]
+members = ["crates/monocle_cli"]
+resolver = "2"
+
+[workspace.dependencies]
+axum = { version = "0.7.9", features = ["macros"] }
+clap = { version = "4.5.23", features = ["derive", "env"] }
+color-eyre = "0.6"
+tokio = { version = "1.42.0", features = ["full"] }
+
+# local workspace deps go here

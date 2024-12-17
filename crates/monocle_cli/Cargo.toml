@@ -1,0 +1,10 @@
+[package]
+name = "monocle_cli"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+axum = { workspace = true, features = ["macros"] }
+clap = { workspace = true, features = ["derive", "env"] }
+color-eyre.workspace = true
+tokio = { workspace = true, features = ["full"] }
