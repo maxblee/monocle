@@ -2,7 +2,6 @@ use clap::{Parser, Subcommand};
 use color_eyre::Result;
 use runserver::RunServerArgs;
 
-pub(crate) mod router;
 mod runserver;
 
 #[derive(Debug, Parser)]

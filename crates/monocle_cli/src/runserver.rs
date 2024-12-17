@@ -2,7 +2,7 @@ use clap::Args;
 use color_eyre::{eyre::eyre, Result};
 use tokio::net::TcpListener;
 
-use crate::router;
+use monocle_cli::router;
 
 #[derive(Debug, Args)]
 pub struct RunServerArgs {
