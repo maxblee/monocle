@@ -11,11 +11,7 @@ color-eyre.workspace = true
 tokio = { workspace = true, features = ["full"] }
 
 [dev-dependencies]
-criterion = { workspace = true, features = [
-    "async",
-    "async_tokio",
-    "html_reports",
-] }
+divan.workspace = true
 
 [[bench]]
 name = "ping"
